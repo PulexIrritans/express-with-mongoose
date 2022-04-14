@@ -5,6 +5,6 @@ const studentSchema = mongoose.Schema({
   age: { type: Number, required: true },
   points: { type: Number, default: 0 },
   happiness: { type: Number, default: 0 },
-});
+}, {collection: "students"});
 
 module.exports = mongoose.model("student", studentSchema);

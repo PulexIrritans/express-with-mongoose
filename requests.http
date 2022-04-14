@@ -10,7 +10,7 @@ POST http://localhost:3000/
 content-type: application/json
 
 {
-    "name": "Martin PAgels",
+    "name": "Martin Pagels",
     "age": 100,
     "points": 100,
     "happiness" : 10

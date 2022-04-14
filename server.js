@@ -1,12 +1,14 @@
 const express = require("express");
+require ('dotenv').config();
+const Student = require("./models/student.js");
 const mongoose = require("mongoose");
 
-const Student = require("./models/student.js");
 
+const { MONGODB_URL } = process.env;
 const app = express();
 const port = 3000;
 
-mongoose.connect("mongodb://localhost:27017/neuefische");
+mongoose.connect(MONGODB_URL);
 
 app.use(express.json());
 
